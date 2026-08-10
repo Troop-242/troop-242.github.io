@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Troop 242"
 theme = "troop242"
+googleAnalytics = "G-PBKHF6XPGD"
 
 [params]
   description = "Building character, citizenship, and fitness since day one."
