@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Welcome to Troop <span>242</span></h1>
+  <p>{{ .Site.Params.description }}</p>
+  <a href="/join/" class="hero-cta">Join Our Troop</a>
+</section>
+
+<div class="container">
+  {{ .Content }}
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Meetings</h3>
+      <p>We meet every {{ .Site.Params.meetingDay }} at {{ .Site.Params.meetingTime }}. All scouts and prospective members welcome.</p>
+    </div>
+    <div class="card">
+      <h3>Adventures</h3>
+      <p>From camping and hiking to community service, our troop stays active year-round with exciting activities.</p>
+    </div>
+    <div class="card">
+      <h3>Leadership</h3>
+      <p>Scouts develop leadership skills, earn merit badges, and advance through the ranks toward Eagle Scout.</p>
+    </div>
+  </div>
+</div>
+{{ end }}

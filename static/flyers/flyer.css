@@ -1,0 +1,213 @@
+/* ===========================
+   Troop 242 Recruitment Flier
+   Shared Visual Language
+   =========================== */
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 8.5in;
+  height: 11in;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #232528;
+  overflow: hidden;
+}
+
+/* ---------- Top banner ---------- */
+.banner {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75in 0.6in;
+  position: relative;
+  overflow: visible;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  right: -1in;
+  top: -1in;
+  width: 4in;
+  height: 4in;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.banner-label {
+  font-size: 11pt;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.75;
+  margin-bottom: 0.12in;
+  font-weight: 600;
+}
+
+.banner h1 {
+  font-size: 38pt;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 6in;
+}
+
+.banner h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+/* ---------- Body area ---------- */
+.body {
+  flex: 1;
+  padding: 0.5in 0.6in;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35in;
+  background: #fff;
+}
+
+.intro {
+  font-size: 15pt;
+  line-height: 1.55;
+  color: #515354;
+  max-width: 6.5in;
+}
+
+/* ---------- Badge pills ---------- */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge-pill {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+/* ---------- Highlight strip ---------- */
+.highlight-strip {
+  background: var(--primary-light);
+  border-left: 5px solid var(--primary);
+  padding: 0.25in 0.3in;
+  border-radius: 0 6px 6px 0;
+}
+
+.highlight-strip p {
+  font-size: 12.5pt;
+  line-height: 1.5;
+  color: #515354;
+}
+
+.highlight-strip strong {
+  color: var(--primary);
+}
+
+/* ---------- Value cards ---------- */
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.value-card {
+  text-align: center;
+  padding: 0.2in 0.12in;
+  border: 2px solid var(--primary-light);
+  border-radius: 8px;
+}
+
+.value-card .icon {
+  font-size: 22pt;
+  margin-bottom: 4px;
+}
+
+.value-card .label {
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+}
+
+.value-card .desc {
+  font-size: 8.5pt;
+  color: #858787;
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+/* ---------- Bottom CTA footer ---------- */
+.cta-footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.4in 0.6in;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3in;
+  margin-top: auto;
+}
+
+.cta-footer .troop-name {
+  font-size: 26pt;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.cta-footer .troop-name span {
+  color: var(--accent);
+}
+
+.cta-footer .details {
+  text-align: right;
+  font-size: 11pt;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.cta-footer .details strong {
+  font-size: 12pt;
+}
+
+/* ---------- Decorative edge ---------- */
+.edge-stripe {
+  height: 6px;
+  background: var(--accent);
+}
+
+/* ---------- Screen preview ---------- */
+@media screen {
+  html {
+    background: #888;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+  }
+  body {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    margin: 0 auto;
+  }
+}
