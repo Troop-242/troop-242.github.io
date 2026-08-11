@@ -1,36 +1,41 @@
 baseURL = "/"
-languageCode = "en-us"
 title = "Troop 242"
 theme = "troop242"
 googleAnalytics = "G-PBKHF6XPGD"
+defaultContentLanguage = "en"
 
-[params]
-  description = "Building character, citizenship, and fitness since day one."
-  location = ""
-  meetingDay = "Monday"
-  meetingTime = "7:00 PM"
-
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
+[languages]
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
     weight = 1
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-  [[menu.main]]
-    name = "Activities"
-    url = "/activities/"
-    weight = 3
-  [[menu.main]]
-    name = "Join"
-    url = "/join/"
-    weight = 4
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
+
+    [languages.en.params]
+      description = "Building character, citizenship, and fitness since day one."
+      location = ""
+      meetingDay = "Monday"
+      meetingTime = "7:00 PM"
+
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "Activities"
+      url = "/activities/"
+      weight = 3
+    [[languages.en.menu.main]]
+      name = "Join"
+      url = "/join/"
+      weight = 4
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 5
 
 [markup]
   [markup.goldmark]

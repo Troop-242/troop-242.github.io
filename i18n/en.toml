@@ -1,0 +1,29 @@
+[hero_heading]
+other = "Welcome to Troop <span>242</span>"
+
+[hero_cta]
+other = "Join Our Troop"
+
+[meetings_title]
+other = "Meetings"
+
+[meetings_desc]
+other = "We meet every {{ .MeetingDay }} at {{ .MeetingTime }}. All scouts and prospective members welcome."
+
+[adventures_title]
+other = "Adventures"
+
+[adventures_desc]
+other = "From camping and hiking to community service, our troop stays active year-round with exciting activities."
+
+[leadership_title]
+other = "Leadership"
+
+[leadership_desc]
+other = "Scouts develop leadership skills, earn merit badges, and advance through the ranks toward Eagle Scout."
+
+[footer_bsa]
+other = "Boy Scouts of America"
+
+[toggle_nav]
+other = "Toggle navigation"

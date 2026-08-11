@@ -1,8 +1,8 @@
 {{ define "main" }}
 <section class="hero">
-  <h1>Welcome to Troop <span>242</span></h1>
+  <h1>{{ i18n "hero_heading" }}</h1>
   <p>{{ .Site.Params.description }}</p>
-  <a href="/join/" class="hero-cta">Join Our Troop</a>
+  <a href="/join/" class="hero-cta">{{ i18n "hero_cta" }}</a>
 </section>
 
 <div class="container">
@@ -10,16 +10,16 @@
 
   <div class="card-grid">
     <div class="card">
-      <h3>Meetings</h3>
-      <p>We meet every {{ .Site.Params.meetingDay }} at {{ .Site.Params.meetingTime }}. All scouts and prospective members welcome.</p>
+      <h3>{{ i18n "meetings_title" }}</h3>
+      <p>{{ i18n "meetings_desc" (dict "MeetingDay" .Site.Params.meetingDay "MeetingTime" .Site.Params.meetingTime) }}</p>
     </div>
     <div class="card">
-      <h3>Adventures</h3>
-      <p>From camping and hiking to community service, our troop stays active year-round with exciting activities.</p>
+      <h3>{{ i18n "adventures_title" }}</h3>
+      <p>{{ i18n "adventures_desc" }}</p>
     </div>
     <div class="card">
-      <h3>Leadership</h3>
-      <p>Scouts develop leadership skills, earn merit badges, and advance through the ranks toward Eagle Scout.</p>
+      <h3>{{ i18n "leadership_title" }}</h3>
+      <p>{{ i18n "leadership_desc" }}</p>
     </div>
   </div>
 </div>
