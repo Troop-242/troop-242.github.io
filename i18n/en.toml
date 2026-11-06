@@ -10,11 +10,17 @@ other = "Meetings"
 [meetings_desc]
 other = "We meet every {{ .MeetingDay }} at {{ .MeetingTime }}. All scouts and prospective members welcome."
 
+[meetings_link]
+other = "Visit a Meeting"
+
 [adventures_title]
 other = "Adventures"
 
 [adventures_desc]
 other = "From camping and hiking to community service, our troop stays active year-round with exciting activities."
+
+[adventures_link]
+other = "See Our Activities"
 
 [leadership_title]
 other = "Leadership"
@@ -22,8 +28,11 @@ other = "Leadership"
 [leadership_desc]
 other = "Scouts develop leadership skills, earn merit badges, and advance through the ranks toward Eagle Scout."
 
+[leadership_link]
+other = "Learn About Scouting"
+
 [footer_bsa]
-other = "Boy Scouts of America"
+other = "Scouting America"
 
 [toggle_nav]
 other = "Toggle navigation"

@@ -1,3 +1,7 @@
+---
+title: "Photos"
+---
+
 # Troop 242 Photos
 
 

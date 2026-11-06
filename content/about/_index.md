@@ -1,5 +1,5 @@
 ---
-title: "About Troop 242"
+title: "About"
 ---
 
 ## Our Mission

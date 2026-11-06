@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="hero">
-  <h1>{{ i18n "hero_heading" }}</h1>
+  <h1>{{ i18n "hero_heading" | safeHTML }}</h1>
   <p>{{ .Site.Params.description }}</p>
   <a href="/join/" class="hero-cta">{{ i18n "hero_cta" }}</a>
 </section>
@@ -12,14 +12,17 @@
     <div class="card">
       <h3>{{ i18n "meetings_title" }}</h3>
       <p>{{ i18n "meetings_desc" (dict "MeetingDay" .Site.Params.meetingDay "MeetingTime" .Site.Params.meetingTime) }}</p>
+      <a href="/contact/" class="card-link">{{ i18n "meetings_link" }}</a>
     </div>
     <div class="card">
       <h3>{{ i18n "adventures_title" }}</h3>
       <p>{{ i18n "adventures_desc" }}</p>
+      <a href="/activities/" class="card-link">{{ i18n "adventures_link" }}</a>
     </div>
     <div class="card">
       <h3>{{ i18n "leadership_title" }}</h3>
       <p>{{ i18n "leadership_desc" }}</p>
+      <a href="/scouting/" class="card-link">{{ i18n "leadership_link" }}</a>
     </div>
   </div>
 </div>

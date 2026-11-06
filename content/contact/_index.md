@@ -14,7 +14,7 @@ We meet weekly at Harrisonburg Baptist Church from 7:00-8:30PM --- visitors are 
 
 ## Connect
 
-For more information about our troop, please contact our Scoutmaster or Committee Chair at your next opportunity. Visit a meeting to introduce yourself.
+For more information about our troop, please [contact our Scoutmaster](mailto:scoutmaster@troop242.us) at your next opportunity. Visit a meeting to introduce yourself.
 
 ## Volunteer
 
